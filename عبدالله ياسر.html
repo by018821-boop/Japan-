@@ -1,0 +1,80 @@
+<table border="1">
+  <tr>
+    <th>Full name</th>
+     <th>age</th>
+    <th>city in jaban</th>
+  </tr>
+  <tr>
+    <th>Bode</th>
+     <th>23</th>
+    <th>tokyo</th>
+  </tr>
+  <th>Deko</th>
+     <th>22</th>
+    <th>kyoto</th>
+  </tr>
+</table>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>معلومات عن اليابان واستمارة</title>
+</head>
+<body>
+
+    <!-- جدول البيانات المختصر -->
+    <h2>جدول معلومات اليابان</h2>
+    <table border="1">
+        <tr>
+            <th>العاصمة</th>
+            <th>اللغة الرسمية</th>
+            <th>العملة</th>
+        </tr>
+        <tr>
+            <td>توكيو</td>
+            <td>اليابانية</td>
+            <td>الين الياباني (€)</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <!-- النموذج النهائي المطلوب -->
+    <h2>استمارة البيانات</h2>
+    <form action="#" method="post">
+
+        <!-- 1. الاسم الكامل -->
+        <label for="fullname">الاسم الكامل:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="أدخل اسمك هنا"><br><br>
+
+        <!-- 2. خيارات الدوائر (Radio Buttons) -->
+        <label>هل زرت هل اليابان من قبل؟</label><br>
+        <input type="radio" id="yes" name="visited" value="yes">
+        <label for="yes">نعم</label><br>
+        <input type="radio" id="no" name="visited" value="no" checked>
+        <label for="no">لا</label><br><br>
+
+        <!-- 3. قائمة اختيار الشهر (Select List) -->
+        <label for="month">اختر شهر السفر المفضّل:</label><br>
+        <select id="month" name="travel_month">
+            <option value="1">يناير</option>
+            <option value="2">فبراير</option>
+            <option value="3">مارس</option>
+            <option value="4">أبريل</option>
+            <option value="5">مايو</option>
+            <option value="6">يونيو</option>
+            <option value="7">يوليو</option>
+            <option value="8">أغسطس</option>
+            <option value="9">سبتمبر</option>
+            <option value="10">أكتوبر</option>
+            <option value="11">نوفمبر</option>
+            <option value="12">ديسمبر</option>
+        </select><br><br>
+
+        <!-- زر الإرسال -->
+        <input type="submit" value="إرسال البيانات">
+
+    </form>
+
+</body>
+</html>
